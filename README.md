@@ -13,19 +13,24 @@ To_Do_App/
 
 ## ⚙️ Backend (Laravel API)
 
-### Başlangıç
+### Kurulum
 
 1. `.env` dosyasını oluşturun:
    ```bash
    cp .env.example .env
-2. Veritabanı bilgilerini .env dosyasında yapılandırın.
-3. Bağımlılıkları yükleyin:
+   
+2. `.env` dosyasında veritabanı bilgilerinizi ayarlayın.
+3. Gerekli paketleri yükleyin:
+   ```bash
    composer install
 4. Uygulama anahtarını oluşturun:
+   ```bash
    php artisan key:generate
 5. Veritabanı migrasyonlarını çalıştırın:
+   ```bash
    php artisan migrate
-6. Geliştirme sunucusunu başlatın:
+6. Laravel sunucusunu başlatın:
+   ```bash
    php artisan serve
 
 
@@ -34,37 +39,42 @@ To_Do_App/
 ### Başlangıç
 
 
-1. Bağımlılıkları yükleyin:
-   npm install
-2. Uygulamayı çalıştırın:
+1. React dizinine gidin:
+   ```bash
+   cd todo-frontend
+2. Paketleri yükleyin:
+   ```bash
+   cd todo-frontend
+3. React uygulamasını başlatın:
+   ```bash
    npm run dev -- --force  
 
 
-🔗 API Uç Noktaları
-GET /api/todos - Tüm todo'ları listele
+## 🔗 API Uç Noktaları
 
-GET /api/todos/{id} - Belirli bir todo
+- `GET /api/todos` – Tüm todo'ları listele
+- `GET /api/todos/{id}` – Belirli bir todo'yu getir
+- `POST /api/todos` – Yeni todo oluştur
+- `PUT /api/todos/{id}` – Todo güncelle
+- `PATCH /api/todos/{id}/status` – Sadece durum güncelle
+- `DELETE /api/todos/{id}` – Soft delete
+- `GET /api/todos/search?q=terim` – Arama yap
 
-POST /api/todos - Yeni todo oluştur
+## 🛠️ Kullanılan Teknolojiler
 
-PUT /api/todos/{id} - Todo güncelle
+- Laravel 10+
+- React 18+
+- Axios
+- Eloquent ORM
+- Vite
+- Tailwind CSS
 
-PATCH /api/todos/{id}/status - Sadece durum güncelle
+## 👨‍💻 Geliştirici
 
-DELETE /api/todos/{id} - Soft delete
+- [aliiugur](https://github.com/aliiugur)
 
-GET /api/todos/search?q=terim - Arama
+## 📄 Lisans
 
-🛠️ Kullanılan Teknolojiler
-Laravel 10+
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 
-React 18+
-
-Axios
-
-Eloquent ORM
-
-Vite
-
-Tailwind 
 
