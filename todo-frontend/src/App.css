@@ -1,0 +1,92 @@
+/* App.css */
+
+/* Ana uygulama konteyneri */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ana içerik alanı */
+.main-content {
+  flex: 1;
+}
+
+/* Header stili */
+.app-header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Footer stili */
+.app-footer {
+  margin-top: auto;
+}
+
+/* Sayfa konteyneri */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card stili */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Dark mode için card stili */
+.dark .card {
+  background-color: #1f2937;
+}
+
+/* Status badge renkleri */
+.status-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+.dark .status-pending {
+  background-color: #78350f;
+  color: #fde68a;
+}
+
+.status-in-progress {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+.dark .status-in-progress {
+  background-color: #1e3a8a;
+  color: #93c5fd;
+}
+
+.status-completed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+.dark .status-completed {
+  background-color: #064e3b;
+  color: #a7f3d0;
+}
+
+.status-cancelled {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+.dark .status-cancelled {
+  background-color: #7f1d1d;
+  color: #fecaca;
+}
+
+/* Form elementleri */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Responsive tasarım ayarları */
+@media (max-width: 640px) {
+  .page-container {
+    padding: 0 0.5rem;
+  }
+}

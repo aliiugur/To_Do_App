@@ -1,0 +1,15 @@
+# Laravel (backend)
+todo-api/vendor/
+todo-api/storage/
+todo-api/.env
+todo-api/.phpunit.result.cache
+
+# React (frontend)
+todo-frontend/node_modules/
+todo-frontend/.env
+todo-frontend/build/
+todo-frontend/dist/
+
+# Genel
+*.log
+.DS_Store
