@@ -44,7 +44,7 @@ To_Do_App/
    cd todo-frontend
 2. Paketleri yükleyin:
    ```bash
-   cd todo-frontend
+   nom install
 3. React uygulamasını başlatın:
    ```bash
    npm run dev -- --force  
